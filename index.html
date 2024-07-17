@@ -5,12 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Magic Buttons</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        div { display: flex;
+              align-items: center;
+              justify-content: space-around;
+              flex-direction: column;
+        }
+    </style>
 </head>
 <body>
-    <h1>✨ Style Your Buttons ✨</h1>
-    <p>Apply custom styles to your button in the Style.css file</p>
-    <button class="custom-btn btn-1">Click Here</button>
-    <button class="custom-btn btn-2">Click Here</button>
-    <button class="custom-btn btn-3">Click Here</button>
+<h1>✨ Style Your Buttons ✨</h1>
+  <p>Apply custom styles to your button in the Style.css file</p>
+  <div style="height: auto" class="column">
+    <div class="item">
+    <button class="button" data-text="Awesome">
+        <span class="actual-text">&nbsp;Click Here&nbsp;</span>
+        <span aria-hidden="true" class="hover-text">&nbsp;Click Here&nbsp;</span>
+    </button>
+    </div>
+    <hr />
+    <div class="item">
+       <button class="btn">Click Here</button>
+         </div>
+         <hr />
+      <div class="item">
+        <button class="button type1">
+        </button>
+      </div>
+    </div>    
 </body>
 </html>
